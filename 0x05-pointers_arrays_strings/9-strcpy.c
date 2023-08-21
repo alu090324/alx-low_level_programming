@@ -7,17 +7,16 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	int l = 0;
-	int x = 0;
+	char *dest_ptr = dest;
 
-	while (*(src + 1) != '\0')
+	while (*src != '\0')
 	{
-		l++;
+		*dest_ptr = *src;
+		dest_ptr++;
+		src++;
 	}
-	for ( ; x < l; x++)
-	{
-		dest[x] = src[x];
-	}
-	dest[1] = '\0';
+
+	*dest_ptr = '\0';
+
 	return (dest);
 }
