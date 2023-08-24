@@ -1,9 +1,10 @@
 #include "main.h"
 /**
  * _strncpy- Write a function that copies a string
- * @dest:
- * @src:
- * @n:
+ * @dest: input value
+ * @src: input value
+ * @n:input value
+ * Return: dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
